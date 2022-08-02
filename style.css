@@ -26,15 +26,17 @@
     position: absolute;
     top: 10px;
     font-weight: 800;
+    text-overflow: ellipsis;
 }
 
 .sidebar h2 {
     font-size: 25px;
     position: absolute;
-    top: 100px;
+    top: 150px;
     font-weight: 800;
     color: darkblue;
     font-family: monospace;
+    text-align: center;
 }
 
 .main-content {
@@ -43,7 +45,7 @@
 }
 
 .select-algo {
-    width: 60%;
+    width: 80%;
     margin: 30px auto;
 }
 
@@ -88,7 +90,7 @@
 
 .options .option {
     display: flex;
-    height: 30px;
+    height: 50px;
     cursor: pointer;
     align-items: center;
     padding: 4px 16px;
