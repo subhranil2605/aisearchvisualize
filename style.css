@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+}
+
+.sidebar {
+    flex: 0.2;
+    height: 100vh;
+    border-right: 1px solid gray;
+    background-color: lightgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sidebar h1 {
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    font-weight: 800;
+    text-overflow: ellipsis;
+}
+
+.sidebar h2 {
+    font-size: 25px;
+    position: absolute;
+    top: 150px;
+    font-weight: 800;
+    color: darkblue;
+    font-family: monospace;
+    text-align: center;
+}
+
+.main-content {
+    flex: 0.8;
+    background-color: lightblue;
+}
+
+.select-algo {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.select-algo .algo {
+    display: flex;
+    height: 55px;
+    background: #fff;
+    padding: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.algo i {
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+.select-algo.active .algo i {
+    transform: rotate(-180deg);
+}
+
+.select-algo .options {
+    position: relative;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.select-algo.active .options {
+    display: block;
+}
+
+.options .option {
+    display: flex;
+    height: 50px;
+    cursor: pointer;
+    align-items: center;
+    padding: 4px 16px;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.options .option:hover {
+    background: #F2F2F2;
+}
+
+.option .option-text {
+    font-size: 15px;
+    color: #333;
+    padding: 5px;
+}
+
+.visualize {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: blueviolet;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+.clearpath {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: blueviolet;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
