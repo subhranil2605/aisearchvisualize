@@ -31,8 +31,13 @@ class Graph {
   }
 
   // gets the neigbor cells
-  gets(a) {
-    return this.graphDict[a];
+  gets(a, b = null) {
+    let links = setDefault(this.graphDict, a, {});
+    if (b) {
+      return links[b];
+    } else {
+      return links;
+    }
   }
 
   nodes() {
