@@ -10,11 +10,19 @@ class GraphProblem {
     return this.graph.gets(state);
   }
 
-  result(state, action) {
-    return action;
+  // path cost
+  pathCost(cost_so_far, A, B) {
+    return cost_so_far + 1;
   }
 
+  // goal test
   isGoal(state) {
     return state.x === this.goal.x && state.y === this.goal.y;
+  }
+
+  // heuristic value
+  h(node) {
+    let heuristic_value = dist(node.x, node.y, this.goal.x, this.goal.y); 
+    return heuristic_value
   }
 }
